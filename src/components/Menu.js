@@ -28,6 +28,7 @@ export default Radium(Menu);
 
 const styles = {
   base: {
+    color: '#555273',
     userSelect: 'none',
     cursor: 'default',
   },

@@ -6,7 +6,7 @@ const COLUMNS = 6;
 const ITEMS_PER_COLUMN = 30;
 
 const Gameboard = ({ addHit, addMiss, emoji, game}) => {
-  const rows = Range(0, COLUMNS).map((value, idx) => {
+  const rows = Range(0, COLUMNS).map((idx) => {
     const tiles = Range(0, ITEMS_PER_COLUMN).map((index) => {
       return (
         <Tiles key={ index }

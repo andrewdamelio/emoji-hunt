@@ -30,9 +30,8 @@ export function decrement() {
   };
 }
 
-export function resetGame(emojis) {
+export function resetGame() {
   return {
     type: RESET_GAME,
-    payload: emojis,
   };
 }

@@ -1,6 +1,9 @@
 ## Emoji Hunt - [Demo](http://andrewdamel.io/dev/emoji-hunt)
 
+
 <img width="333" src="https://cloud.githubusercontent.com/assets/1683736/11326880/1b6a8d72-9143-11e5-8bac-9a30eb647702.png">
+
+``` Works best on Chrome (OS X)```
 
 
 ### Installation

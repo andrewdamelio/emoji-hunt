@@ -1,1 +1,10 @@
 @import 'basscss';
+
+body {
+  background: #E2EFF1;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
