@@ -1,6 +1,6 @@
 {
   "name": "emoji-hunt",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Find the emoji's",
   "scripts": {
     "start": "webpack-dev-server --hot --progress",
@@ -28,6 +28,7 @@
     "file-loader": "^0.8.4",
     "font-awesome": "^4.4.0",
     "immutable": "^3.7.5",
+    "ionicons": "^2.0.1",
     "json-loader": "^0.5.3",
     "node-libs-browser": "^0.5.2",
     "normalize": "^0.3.1",

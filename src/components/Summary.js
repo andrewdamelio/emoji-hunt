@@ -1,9 +1,8 @@
 import React from 'react';
 
-const Summary = ({ emoji, resetGame, resetEmoji, setupGame, className = '' }) => {
+const Summary = ({ emoji, resetGame, setupGame, className = '' }) => {
   function handleReset() {
     resetGame();
-    resetEmoji();
     setupGame();
   }
 

@@ -1,5 +1,5 @@
 import { handleActions } from 'redux-actions';
-import { ADD_HIT, ADD_MISS, SET_TARGETS, RESET_EMOJI } from '../constants';
+import { ADD_HIT, ADD_MISS, SET_TARGETS, RESET_GAME } from '../constants';
 import { fromJS } from 'immutable';
 
 const emojiReducer = handleActions({
@@ -20,7 +20,7 @@ const emojiReducer = handleActions({
       misses: state.get('misses').concat(action.payload),
     });
   },
-  [RESET_EMOJI]: (state) => {
+  [RESET_GAME]: (state) => {
     return state.merge(state, {
       targets: [],
       misses: [],

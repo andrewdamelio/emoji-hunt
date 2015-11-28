@@ -26,9 +26,8 @@ export function setTargets(emojis) {
   };
 }
 
-export function resetEmoji(emojis) {
+export function resetEmoji() {
   return {
     type: RESET_EMOJI,
-    payload: emojis,
   };
 }

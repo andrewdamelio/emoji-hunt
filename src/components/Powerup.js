@@ -13,14 +13,13 @@ const Powerup = ({ game, powerup, className = '' }) => {
 
   return (
     <div className={ `${ className }` }>
-      <div disabled={ game.get('powerup').get('used') }>
+
         <div>Powerup</div>
         <i style={  game.get('powerup').get('used')
             ? styles.disabled
             : styles.fontSizeLg }
            className="ion-eye"
            onClick={ sightBuff }></i>
-      </div>
     </div>
   );
 };
@@ -30,7 +29,7 @@ export default Radium(Powerup);
 const styles = {
   disabled: {
     fontSize: '3em',
-    filter: 'blur(5px)',
+    filter: 'url(#blur)',
   },
   fontSizeLg: {
     fontSize: '3em',

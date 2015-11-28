@@ -24,10 +24,10 @@ export default Radium(Menu);
 
 const styles = {
   zoom: {
-    fontSize: '.2em',
+    fontSize: '9px',
     cursor: 'zoom-in',
     ':hover': {
-      fontSize: '2.8em',
+      fontSize: '43px',
     },
   },
 };

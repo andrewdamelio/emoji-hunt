@@ -7,10 +7,10 @@ import emojiService from '../utils/emoji';
 export default class Tile extends Component {
 
   static propTypes = {
-    game: PropTypes.object,
-    emoji: PropTypes.object,
-    addMiss: PropTypes.func,
-    addHit: PropTypes.func,
+    game: PropTypes.object.isRequired,
+    emoji: PropTypes.object.isRequired,
+    addMiss: PropTypes.func.isRequired,
+    addHit: PropTypes.func.isRequired,
   }
 
 
@@ -82,11 +82,11 @@ export default class Tile extends Component {
            className="border center"
            onClick={ this._toggleSelected }
            style={ this._isPoint() && powerupActive
-             ? [styles.title, styles.highlight]
-             : styles.title } >
+             ? [styles.tile, styles.highlight]
+             : styles.tile } >
 
         { state.selected
-          ? <div style={ styles.selected }>?</div>
+          ? <div style={ styles.selected }>X</div>
           : state.emojis }
       </div>
     );
@@ -95,12 +95,13 @@ export default class Tile extends Component {
 
 const styles = {
   selected: {
-    color: 'rgba(0,0,0,0)',
+    background: '#555273',
+    color: '#555273',
   },
   highlight: {
-    background: '#555273',
+    background: 'tomato',
   },
-  title: {
+  tile: {
     fontSize: '4vw',
     width: '1.4em',
     cursor: 'pointer',

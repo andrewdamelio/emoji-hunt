@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import configureStore from './store/configureStore';
 import EmojiHunt from './containers/Emoji';
 import './styles.css';
+import '../node_modules/ionicons/css/ionicons.css';
 
 import {
   DevTools,
