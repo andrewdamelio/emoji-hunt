@@ -21,7 +21,7 @@ const Gameboard = ({ addHit, addMiss, emoji, game}) => {
     return (
       <div key={ idx }
            style={ styles.container }
-           className="flex flex-column overflow-scroll">
+           className="overflow-scroll">
         { tiles }
       </div>
     );
